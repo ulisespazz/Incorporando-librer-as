@@ -156,6 +156,7 @@ function incrementarCantidad(id) {
     carrito[indice].cantidad++    
     guardarStorange(carrito)
     mostrarCarrito()
+    mostrarTotalCarrito()
 }
 
 function restarCantidad(id) {
@@ -165,6 +166,7 @@ function restarCantidad(id) {
         carrito[indice].cantidad--
         guardarStorange(carrito)
         mostrarCarrito()
+        mostrarTotalCarrito()
     } else {
         Swal.fire({
             title: 'Estas seguro?',
